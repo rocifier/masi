@@ -1,2 +1,8 @@
+body {
+  padding: 0;
+  margin: 0; }
+  
+  body a {
+    font-weight: bold; }
 
 /*# sourceMappingURL=css/main.css.map */

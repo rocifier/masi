@@ -21,7 +21,7 @@ var lib_paths = [
 gulp.task('watch', ['sass'], function() {
 
     browserSync.init({
-        browser: "google chrome",
+        browser: "chrome",
         server: "./"
     });
 

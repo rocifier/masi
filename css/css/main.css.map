@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"../main.css","sourcesContent":[]}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA;EACI,WAAW;EACX,UAAU,EAIb;EAND;IAIQ,kBAAkB,EACrB","file":"../main.css","sourcesContent":["body {\r\n    padding: 0;\r\n    margin: 0;\r\n    a {\r\n        font-weight: bold;\r\n    }\r\n}"]}
