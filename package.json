@@ -1,0 +1,18 @@
+{
+  "name": "masi",
+  "version": "1.0.0",
+  "description": "wine website",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rose",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.17.6",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0"
+  }
+}
