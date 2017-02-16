@@ -6391,6 +6391,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+<<<<<<< HEAD
+=======
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Cinzel', serif; }
+
+>>>>>>> 610b2466d2b5bbc105de3e0153eb55cd74b6d416
 #page {
   background-color: black;
   width: 100vw;
