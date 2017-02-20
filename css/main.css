@@ -6391,8 +6391,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-<<<<<<< HEAD
-=======
 body {
   padding: 0;
   margin: 0;
@@ -6404,31 +6402,49 @@ h3,
 h4 {
   font-family: 'Cinzel', serif; }
 
->>>>>>> 610b2466d2b5bbc105de3e0153eb55cd74b6d416
 #page {
   background-color: black;
-  width: 100vw;
-  height: 100vh;
+  left: 0vw;
+  right: 0vw;
+  bottom: 0vw;
+  top: 0vw;
   overflow: hidden; }
 
 #block1 {
   background-color: red;
+  background-image: url("http://placehold.it/900x900/ff0000/000000?text=block1");
+  background-position: center;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  position: absolute; }
 
 #block2 {
   background-color: green;
-  width: 0;
-  height: 100vh; }
+  background-image: url("http://placehold.it/900x250/00ff00/000000?text=block2");
+  background-position: center;
+  right: 0vw;
+  left: 100vw;
+  bottom: 0vw;
+  top: 0vw;
+  position: absolute; }
 
 #block3 {
   background-color: blue;
+  background-image: url("http://placehold.it/900x300/0000ff/000000?text=block3");
+  background-position: center;
   width: 50vw;
-  height: 0; }
+  left: 50vw;
+  bottom: 0;
+  top: 100vh;
+  position: absolute; }
 
 #block4 {
   background-color: yellow;
+  background-image: url("http://placehold.it/900x300/ffff00/000000?text=block4");
+  background-position: center;
   width: 50vw;
-  height: 0; }
+  bottom: 0;
+  top: 100vh;
+  position: absolute; }
 
 /*# sourceMappingURL=css/main.css.map */
