@@ -1,0 +1,16 @@
+{
+    "mylover": "rose",
+    "status": "er bai wu"
+}
+
+
+
+
+$(function() {
+    $.getJSON("api.json", function(data) {
+        $("#box").html("my lover is " + data.mylover);
+
+    });
+
+
+})

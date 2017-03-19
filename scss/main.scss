@@ -1,63 +1,139 @@
-@import "bootstrap";
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Cinzel', serif;
-}
-
-#page {
-    background-color: black;
-    left: 0vw;
-    right: 0vw;
-    bottom: 0vw;
-    top: 0vw;
-    overflow: hidden;
-}
-
-#block1 {
-    background-color: red;
-    background-image: url('http://placehold.it/900x900/ff0000/000000?text=block1');
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
-#block2 {
-    background-color: green;
-    background-image: url('http://placehold.it/900x250/00ff00/000000?text=block2');
-    background-position: center;
-    right: 0vw;
-    left: 100vw;
-    bottom: 0vw;
-    top: 0vw;
-    position: absolute;
-}
-
-#block3 {
-    background-color: blue;
-    background-image: url('http://placehold.it/900x300/0000ff/000000?text=block3');
-    background-position: center;
-    width: 50vw;
-    left: 50vw;
-    bottom: 0;
-    top: 100vh;
-    position: absolute;
-}
-
-#block4 {
-    background-color: yellow;
-    background-image: url('http://placehold.it/900x300/ffff00/000000?text=block4');
-    background-position: center;
-    width: 50vw;
-    bottom: 0;
-    top: 100vh;
-    position: absolute;
-}
+        @import "masi-variables";
+        @import "bootstrap";
+        @import "mixins";
+        @import "menu";
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Cinzel', serif;
+        }
+        
+        #icon-menu-page {
+            left: 0vw;
+            right: 0vw;
+            bottom: 0vw;
+            top: 0vw;
+            background-color: $dark;
+            position: absolute;
+        }
+        
+        #menu {
+            font-family: 'Cinzel', serif;
+            font-size: 2em;
+            color: white;
+            text-align: center;
+            li {
+                list-style: none;
+                line-height: 0.8em;
+                padding-top: 30px;
+            }
+            span {
+                font-size: $font-small;
+                font-style: italic;
+                margin-bottom: 0px;
+                display: block;
+            }
+        }
+        
+        a {
+            color: white;
+        }
+        
+        #page {
+            background-color: $dark;
+            left: 0vw;
+            right: 0vw;
+            bottom: 0vw;
+            top: 0vw;
+            overflow: hidden;
+        }
+        
+        #page1 {
+            background-color: red;
+            background-image: url('../img/rose-block1.jpg');
+            background-position: center;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+        }
+        
+        #page2 {
+            background-color: green;
+            background-image: url('../img/rose-block2.jpg');
+            background-position: center;
+            right: 0vw;
+            left: 100vw;
+            bottom: 0vw;
+            top: 0vw;
+            position: absolute;
+        }
+        
+        #page3 {
+            background-color: blue;
+            background-image: url('../img/rose-block3.jpg');
+            background-position: center;
+            width: 50vw;
+            left: 50vw;
+            bottom: 0;
+            top: 100vh;
+            position: absolute;
+        }
+        
+        #page4 {
+            background-color: yellow;
+            background-image: url('../img/rose-block4.jpg');
+            background-position: center;
+            width: 50vw;
+            bottom: 0;
+            top: 100vh;
+            left: 50vw;
+            position: absolute;
+        }
+        
+        #menu li a {
+            &::before,
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 9px;
+                border-top: 1px solid white;
+                transform: scale(0, 1);
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            &:hover::before {
+                transition: all 0.2s ease-in-out 0s;
+                transform: scale(1, 1);
+            }
+            &:hover::after {
+                transition: all 0.2s ease-in-out 0s;
+                transform: scale(1, 1);
+            }
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2::after {
+                display: block;
+                content: "";
+                border-bottom: 1px solid $dark;
+            }
+            .flex-container:h2:hover {
+                width: 100%;
+            }
+        }
