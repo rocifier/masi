@@ -9,7 +9,7 @@ var src = {
     all_scss: 'scss/**/*.scss',
     scss: 'scss/main.scss',
     css: 'css',
-    maps: 'css',
+    maps: '',
     html: '*.html'
 };
 

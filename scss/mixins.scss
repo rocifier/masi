@@ -16,3 +16,11 @@
     content: "";
     top: $top;
 }
+
+@mixin bg-image-centered($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: hidden;
+}
