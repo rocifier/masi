@@ -1586,9 +1586,6 @@ pre {
   .form-control::-webkit-input-placeholder {
     color: #636c72;
     opacity: 1; }
-  .form-control::-moz-placeholder {
-    color: #636c72;
-    opacity: 1; }
   .form-control:-ms-input-placeholder {
     color: #636c72;
     opacity: 1; }
@@ -6476,25 +6473,32 @@ a {
   left: 0vw;
   right: 0vw;
   bottom: 0vw;
-  top: 0vw; }
-  #homepage .flex-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #homepage .flex-container h2 {
-      transform: transitionY(-50px); }
-    #homepage .flex-container h2::after {
-      display: block;
-      content: "";
-      background: #efefef;
-      height: 1px;
-      width: 100%;
-      transform: scale(1.3, 1); }
-  #homepage:hover h2::after {
-    transform: scale(1, 1); }
+  top: 0vw;
+  overflow: hidden; }
+
+.title-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .title-block h2 {
+    transform: transitionY(-50px); }
+  .title-block h2::after {
+    display: block;
+    content: "";
+    background: #efefef;
+    height: 1px;
+    width: 100%;
+    transform: scale(1.3, 1);
+    transition: transform ease-in-out .2s; }
+  .title-block:hover h2::after {
+    transform: scale(1, 1);
+    transition: transform ease-in-out .2s; }
 
 #page1 {
   background-image: url("../img/rose-block1.jpg");
