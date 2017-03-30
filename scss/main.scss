@@ -55,7 +55,7 @@
             right: 0vw;
             bottom: 0vw;
             top: 0vw;
-            overflow: hidden;
+            position: absolute;
         }
 
         .title-block {
@@ -115,10 +115,10 @@
         
         #page2 {
             @include bg-image-centered('../img/rose-block2.jpg');
-            right: 0vw;
+            right: 00vw;
             left: 100vw;
             bottom: 0vw;
-            top: 0vw;
+            top: 0vh;
         }
         
         #page3 {
@@ -135,6 +135,10 @@
             bottom: 0;
             top: 100vh;
             left: 50vw;
+        }
+
+        #page > .row {
+            position: relative;
         }
         
         #menu li a {

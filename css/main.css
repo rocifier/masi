@@ -6474,7 +6474,7 @@ a {
   right: 0vw;
   bottom: 0vw;
   top: 0vw;
-  overflow: hidden; }
+  position: absolute; }
 
 .title-block {
   display: -ms-flexbox;
@@ -6531,10 +6531,10 @@ a {
   background-position: center;
   position: absolute;
   overflow: hidden;
-  right: 0vw;
+  right: 00vw;
   left: 100vw;
   bottom: 0vw;
-  top: 0vw; }
+  top: 0vh; }
 
 #page3 {
   background-image: url("../img/rose-block3.jpg");
@@ -6557,6 +6557,9 @@ a {
   bottom: 0;
   top: 100vh;
   left: 50vw; }
+
+#page > .row {
+  position: relative; }
 
 #menu li a::before, #menu li a::after {
   content: '';
